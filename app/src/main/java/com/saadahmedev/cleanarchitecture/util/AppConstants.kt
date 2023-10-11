@@ -6,6 +6,6 @@ class AppConstants {
     }
 
     object Api {
-        const val BASE_URL = "http://192.168.0.114:8080/api/"
+        const val BASE_URL = "https://dummyjson.com/"
     }
 }
