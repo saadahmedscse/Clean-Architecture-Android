@@ -18,7 +18,7 @@ public class ProgressDialog {
     }
 
     public void show() {
-        popupDialog.setStyle(Styles.PROGRESS).showDialog();
+        popupDialog.setStyle(Styles.PROGRESS).setCancelable(false).showDialog();
     }
 
     public void dismiss() {
