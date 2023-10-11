@@ -36,9 +36,9 @@ abstract class BaseActivity<BINDING: ViewBinding>(private val bindingInflater: (
         super.onCreate(savedInstanceState)
         _binding = bindingInflater.invoke(layoutInflater)
         setContentView(binding.root)
-        observeData()
         initToolbar()
         onActivityCreate(savedInstanceState)
+        observeData()
     }
 
     private fun initToolbar() {

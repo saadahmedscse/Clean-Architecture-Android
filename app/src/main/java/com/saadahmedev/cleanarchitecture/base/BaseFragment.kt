@@ -49,8 +49,8 @@ abstract class BaseFragment<BINDING: ViewBinding>(
         _binding = bindingInflater.invoke(layoutInflater)
         _session = SessionManager.getInstance(requireContext())
         _tinyDb = TinyDB.getInstance(requireContext())
-        observeData()
         onFragmentCreate(savedInstanceState)
+        observeData()
     }
 
     override fun onCreateView(
